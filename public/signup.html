@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Rishu</title>
+    
+</head>
+<body>
+        <div class="container">
+            <h4 class="alert-danger text-center" id='error'></h4>
+            <h1 id="login" class="alert-success text-center">SignUp</h1>
+            <form action="dosignup" method="POST">
+            <div class="form-group">
+                <label for="">UserID</label>
+                <input name="userid" required class="form-control" type="text" placeholder="Type UserId here">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input name="password" required class="form-control" type="password" placeholder="Type Password Here">
+            </div>
+            <div class="form-group">
+                    <label for="">Name</label>
+                    <input name="name" required class="form-control" type="text" placeholder="Type Name here">
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile</label>
+                    <input name="phone" id="userid" class="form-control" type="tel" pattern="[0-9]{10}" required placeholder="Type Mobile No. here">
+                </div>
+            <div class="form-group">
+                    <button class="btn btn-success"  type="submit">Register</button>
+                    <!-- <button class="btn btn-danger">Reset</button> -->
+            </div>
+        </form>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  
+                </div>
+</body>
+</html>
