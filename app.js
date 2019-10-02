@@ -1,13 +1,13 @@
-var fs=require('fs');
-var path= require('path');
-const http=require('http');
-var server=http.createServer(handleRequestAndResponse);
+var fs=require('fs');// for file read
+var path= require('path');// path define
+const http=require('http');// server request
+var server=http.createServer(handleRequestAndResponse);// handle request
 server.listen(2525,()=>{
     console.log('server started');
 });
 
 
-function serveFile(pathName,response) {
+function serveFile(pathName,response) {// serve static file
     var newpath=path.join(__dirname,pathName);
     var readstream=fs.createReadStream(newpath);
     readstream.pipe(response);
